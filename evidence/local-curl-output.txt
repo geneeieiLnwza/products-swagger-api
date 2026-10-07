@@ -1,0 +1,27 @@
+
+> products-swagger-api@1.0.0 demo
+> bash scripts/demo.sh
+
+
+1. GET /api/products
+HTTP 200
+{"data":[{"id":1,"name":"Wireless keyboard","price":1290,"stock":25,"category":"electronics","createdAt":"2026-10-07T19:36:21.887Z"},{"id":2,"name":"Node.js book","price":450,"stock":10,"category":"books","createdAt":"2026-10-07T19:36:21.887Z"}],"page":1,"limit":10,"total":2}
+
+2. POST /api/products
+HTTP 201
+{"id":4,"name":"Desk lamp","price":799,"stock":4,"category":"electronics","createdAt":"2026-10-07T19:36:34.407Z"}
+
+3. GET /api/products/4
+HTTP 200
+{"id":4,"name":"Desk lamp","price":799,"stock":4,"category":"electronics","createdAt":"2026-10-07T19:36:34.407Z"}
+
+4. PUT /api/products/4
+HTTP 200
+{"id":4,"name":"Updated lamp","price":899,"stock":5,"category":"electronics","createdAt":"2026-10-07T19:36:34.407Z"}
+
+5. PATCH /api/products/4
+HTTP 200
+{"id":4,"name":"Updated lamp","price":699,"stock":5,"category":"electronics","createdAt":"2026-10-07T19:36:34.407Z"}
+
+6. DELETE /api/products/4
+HTTP 204

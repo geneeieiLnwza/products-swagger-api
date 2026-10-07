@@ -1,0 +1,19 @@
+{
+  "name": "products-swagger-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node.js Express Products CRUD API with OpenAPI and Swagger UI",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "demo": "bash scripts/demo.sh"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "swagger-jsdoc": "6.3.0",
+    "swagger-ui-express": "5.0.1"
+  }
+}
